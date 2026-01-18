@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORTIS Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-gradient-blue fixed-top shadow-sm">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold d-flex align-items-center text-dark" href="#">
+            <img src="https://i.pinimg.com/736x/2a/3c/60/2a3c60d5625c0ce2c052a4556ecb6709.jpg" width="30" height="30" class="d-inline-block align-text-top me-2 rounded-circle">
+            CORTIS
+        </a>
+        <div class="d-flex align-items-center ms-auto">
+            <button id="darkModeToggle" class="btn btn-link text-dark me-2 border-0">
+                <i class="bi bi-moon-stars-fill"></i>
+            </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Community</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Project</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Album</a></li>
+                        <li><a class="dropdown-item" href="#">Song</a></li>
+                        <li><a class="dropdown-item" href="#">Dance</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-interval="false">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://i.pinimg.com/1200x/6d/93/ce/6d93ce0af570c3395afa19f63d0b13e0.jpg" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="https://i.pinimg.com/1200x/d0/a9/b9/d0a9b9f4a25f0e8aeb02bf0fbcfbef12.jpg" class="d-block w-100">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<div class="container1 py-4">
+    <div class="container mt-2 pt-3">
+        <div class="row text-center mb-4">
+            <h3 class="section-title">150 Days Record</h3>
+            <h5>- A Journey of 5 Miracle Boys -</h5>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm award-card" data-bs-toggle="modal" data-bs-target="#modalMAMA" style="cursor: pointer;">
+                    <img src="https://image.idntimes.com/post/20251202/upload_b4c3134a78afe9f6f7c20309233f7fd4_c2a1d109-25a9-4d65-819c-6412ce8e92cd.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Mnet Asian Music Awards (MAMA) 2025</h5>
+                        <p class="card-text small">Rookie Of The Year</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm award-card" data-bs-toggle="modal" data-bs-target="#modalAAA" style="cursor: pointer;">
+                    <img src="https://media.vogue.com.tw/photos/6934f348c0201f2c781b642c/master/w_1600%2Cc_limit/2025120621310995276_1.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Asia Artist Awards (AAA) 2025</h5>
+                        <p class="card-text small">Rookie Of The Year</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm award-card" data-bs-toggle="modal" data-bs-target="#modalTikTok" style="cursor: pointer;">
+                    <img src="https://cdn.k-ennews.com/news/photo/202510/10899_29754_4631.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">TikTok Awards Korea 2025</h5>
+                        <p class="card-text small">Rookie Of The Year</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm award-card" data-bs-toggle="modal" data-bs-target="#modalGDA" style="cursor: pointer;">
+                    <img src="https://media.suara.com/pictures/970x544/2026/01/11/14527-momen-ikonik-golden-disc-awards-2026.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">40th Golden Disc Awards (GDA) 2026</h5>
+                        <p class="card-text small">Rookie Of The Year</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm award-card" data-bs-toggle="modal" data-bs-target="#modaliHeart" style="cursor: pointer;">
+                    <img src="https://cdn.rri.co.id/berita/Bengkulu/o/1761401349336-WhatsApp_Image_2025-10-25_at_21.08.44/129lns9edl55k8f.jpeg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">iHeartRadio Music Awards 2026</h5>
+                        <p class="card-text small">Best New Artist (K-pop)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="mb-2 text-center">- The Fighters, The Dreamers, That Teenagers -</p>
+    </div>
+</div>
+
+<div class="modal fade" id="modalMAMA" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content custom-modal">
+            <div class="modal-header border-0"><button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body text-center pb-5">
+                <img src="https://image.idntimes.com/post/20251202/upload_b4c3134a78afe9f6f7c20309233f7fd4_c2a1d109-25a9-4d65-819c-6412ce8e92cd.jpg" class="img-fluid rounded mb-4 shadow">
+                <h3 class="fw-bold">MAMA 2025</h3>
+                <h5 class="text-primary mb-3">Rookie Of The Year</h5>
+                <p>CORTIS made history on the MAMA stage, securing the most prestigious newcomer award of the year.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalAAA" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content custom-modal">
+            <div class="modal-header border-0"><button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body text-center pb-5">
+                <img src="https://media.vogue.com.tw/photos/6934f348c0201f2c781b642c/master/w_1600%2Cc_limit/2025120621310995276_1.jpg" class="img-fluid rounded mb-4 shadow">
+                <h3 class="fw-bold">AAA 2025</h3>
+                <h5 class="text-primary mb-3">Rookie Of The Year</h5>
+                <p>Bringing home the AAA trophy, solidifying CORTIS's position as a "Monster Rookie" in the Asian scene.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalTikTok" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content custom-modal">
+            <div class="modal-header border-0"><button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body text-center pb-5">
+                <img src="https://cdn.k-ennews.com/news/photo/202510/10899_29754_4631.jpg" class="img-fluid rounded mb-4 shadow">
+                <h3 class="fw-bold">TikTok Awards 2025</h3>
+                <h5 class="text-primary mb-3">Rookie Of The Year</h5>
+                <p>Incredible digital dominance; CORTIS became the most-discussed group across the TikTok platform globally.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalGDA" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content custom-modal">
+            <div class="modal-header border-0"><button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body text-center pb-5">
+                <img src="https://media.suara.com/pictures/970x544/2026/01/11/14527-momen-ikonik-golden-disc-awards-2026.jpg" class="img-fluid rounded mb-4 shadow">
+                <h3 class="fw-bold">40th GDA 2026</h3>
+                <h5 class="text-primary mb-3">Rookie Of The Year</h5>
+                <p>Concluding the award season beautifully with a trophy from the prestigious Golden Disc Awards.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modaliHeart" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content custom-modal">
+            <div class="modal-header border-0"><button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body text-center pb-5">
+                <img src="https://cdn.rri.co.id/berita/Bengkulu/o/1761401349336-WhatsApp_Image_2025-10-25_at_21.08.44/129lns9edl55k8f.jpeg" class="img-fluid rounded mb-4 shadow">
+                <h3 class="fw-bold">iHeartRadio 2026</h3>
+                <h5 class="text-primary mb-3">Best New Artist (K-pop)</h5>
+                <p>Successful global expansion as CORTIS successfully captured the attention of the US music industry.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container2">
+    <div class="milestone-container p-4 p-md-5 shadow-sm mx-auto" style="max-width: 90%;">
+        <h3 class="section-title text-center">150 Days Milestone Summary</h3><br>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="milestone-item mb-4">
+                    <label class="text-muted small text-uppercase fw-bold">Group Name</label>
+                    <div class="h5 fw-bold border-bottom pb-2">CORTIS (코티스)</div>
+                </div>
+                <div class="milestone-item">
+                    <label class="text-muted small text-uppercase fw-bold">Fandom Name</label>
+                    <div class="h5 fw-bold border-bottom pb-2">COER (코어)</div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="milestone-item mb-4">
+                    <label class="text-muted small text-uppercase fw-bold">Global Rookie Rank</label>
+                    <div class="h5 fw-bold border-bottom pb-2"><u>#1 Most Awarded Rookie</u></div>
+                </div>
+                <div class="milestone-item">
+                    <label class="text-muted small text-uppercase fw-bold">Debut Anniversary Count</label>
+                    <div class="h5 fw-bold border-bottom pb-2">150 Days</div>
+                </div>
+            </div>
+            <div class="row">
+            <div class="col-12">
+                <label class="text-muted small text-uppercase fw-bold">Achievement Statement</label>
+                <div class="milestone-statement mt-2 p-3 bg-custom rounded shadow-inner">
+                    Starting from a small dream in the practice room to conquering the grand stages of MAMA, AAA, and GDA. CORTIS has proven that within 150 days, miracle is not just a word, it is a result of sweat, tears, and the unwavering support of COER. This record is only the beginning of a long journey to the stars.
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="container3 py-5">
+    <div class="row justify-content-center px-4">
+        <div class="col-md-7 mb-4">
+            <h3 class="fw-bold mb-4">Address</h3>
+            <p class="d-flex align-items-start text-dark mb-3">
+                <i class="fas fa-location-dot me-2 mt-1"></i> 
+                <span class="alamat">42 Hangang-daero, Yongsan-gu, Seoul, South Korea</span>
+            </p>
+            <div class="map-wrapper shadow-sm border rounded overflow-hidden" style="max-width: 100%;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.3314949511674!2d126.96452207663471!3d37.523612026569144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3cd49555555%3A0x6a0f7f2b93475f3a!2sHYBE%20HQ!5e0!3m2!1sen!2sid!4v1700000000000" width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="col-md-5 ps-md-5">
+            <h3 class="fw-bold mb-4">Social Media</h3>
+            <div class="social-list">
+                <a href="https://www.instagram.com/cortis" class="social-link"><i class="fab fa-instagram fa-lg me-2"></i>Instagram</a>
+                <a href="https://x.com/cortis_official" class="social-link"><i class="fab fa-x-twitter fa-lg me-2"></i>Twitter</a>
+                <a href="https://youtube.com/@cortis_bighit" class="social-link"><i class="fab fa-youtube fa-lg me-2"></i>YouTube</a>
+                <a href="https://www.tiktok.com/@cortis_bighit" class="social-link"><i class="fab fa-tiktok fa-lg me-2"></i>Tiktok</a>
+                <a href="https://weverse.io/cortis" class="social-link"><i class="fas fa-w fa-lg me-2"></i> Weverse</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container4 py-5">
+        <div class="text-center mb-5">
+            <h2 class="display-6 fw-bold mb-3">Big Support from <span class="h2">The Icons</span></h2>
+            <div class="mx-auto" style="width: 80px; height: 3px; background-color: var(--profile-border);"></div>
+        </div>
+        
+        <div class="row justify-content-center px-md-5">
+            <div class="col-md-5 mb-4">
+                <div class="senior-card p-3 shadow-sm">
+                    <div class="d-flex align-items-center senior-item">
+                        <img src="https://i.pinimg.com/1200x/d1/de/91/d1de91401aa0f473152c6abef52884b5.jpg" 
+                             class="rounded-circle profile-img-wf me-3" width="75" height="75">
+                        <div class="text-content">
+                            <div class="star-rating mb-1">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <h6 class="fw-bold mb-1">Kim Namjoon (RM)</h6>
+                            <p class="small mb-0 fst-italic">"Their raw talent is undeniable."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5 mb-4">
+                <div class="senior-card p-3 shadow-sm">
+                    <div class="d-flex align-items-center senior-item">
+                        <img src="https://i.pinimg.com/736x/13/2f/5f/132f5fb01fc1b3dc34b0b51559c25700.jpg" 
+                             class="rounded-circle profile-img-wf me-3" width="75" height="75">
+                        <div class="text-content">
+                            <div class="star-rating mb-1">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <h6 class="fw-bold mb-1">Choi Yeonjun (TXT)</h6>
+                            <p class="small mb-0 fst-italic">"The stage presence is insane."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5 mb-4">
+                <div class="senior-card p-3 shadow-sm">
+                    <div class="d-flex align-items-center senior-item">
+                        <img src="https://tse3.mm.bing.net/th/id/OIP.XhtjBucdPM6sZsrCdRsadwHaJ4?pid=Api&P=0&h=180" 
+                             class="rounded-circle profile-img-wf me-3" width="75" height="75">
+                        <div class="text-content">
+                            <div class="star-rating mb-1">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <h6 class="fw-bold mb-1">Supreme Boi (Producer Nim)</h6>
+                            <p class="small mb-0 fst-italic">"CORTIS represents the peak."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5 mb-4">
+                <div class="senior-card p-3 shadow-sm">
+                    <div class="d-flex align-items-center senior-item">
+                        <img src="https://i.pinimg.com/1200x/2f/fc/be/2ffcbe9c703cb625195563994bd0d2a3.jpg" 
+                             class="rounded-circle profile-img-wf me-3" width="75" height="75">
+                        <div class="text-content">
+                            <div class="star-rating mb-1">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <h6 class="fw-bold mb-1">Haruto (Treasure)</h6>
+                            <p class="small mb-0 fst-italic">"CORTIS, an idol of idols."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<footer class="bg-gradient-blue text-dark text-center py-3">
+    <small>© 2026 CORTIS | BigHit Entertaiment - All Rights Reserved</small>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
