@@ -21,28 +21,29 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (reviewForm) {
         reviewForm.addEventListener('submit', function(event) {
-            // 1. Mencegah halaman agar tidak refresh saat tombol diklik
+            // 1. Mencegah halaman refresh otomatis
             event.preventDefault();
 
-            // 2. Mengambil semua data dari inputan
-            const data = {
-                nama: document.getElementById('nama').value,
-                email: document.getElementById('email').value,
-                ig: document.getElementById('ig').value,
-                tanggal: document.getElementById('tanggal').value,
-                pesan: document.getElementById('pesan').value
-            };
+            // 2. Mengambil data dari inputan
+            const name = document.getElementById('nama').value;
+            const ig = document.getElementById('ig').value;
+            const email = document.getElementById('email').value;
+            // Catatan: Anda belum memberi ID pada input "Reason Joined COER", 
+            // tapi tombol tetap aktif tanpa itu.
 
-            // 3. Logika Sederhana (Contoh: Menampilkan pesan sukses)
-            console.log("Data Review Diterima:", data); // Melihat hasil di inspect element console
-            
-            alert("Terima kasih " + data.nama + "!\nReview kamu untuk CORTIS telah berhasil dikirim.");
+            // 3. Menampilkan notifikasi sukses (Bahasa Inggris sesuai tema)
+            alert("Thank you, " + name + "!\nYour review for CORTIS has been successfully submitted.\nWe will keep in touch via @" + ig);
 
-            // 4. Mengosongkan kembali form setelah dikirim
+            // 4. Log data ke console (untuk pengecekan mandiri)
+            console.log("Submission received:", {
+                fullName: name,
+                instagram: ig,
+                email: email
+            });
+
+            // 5. Mengosongkan form kembali
             reviewForm.reset();
         });
-    } else {
-        console.error("Error: ID 'reviewForm' tidak ditemukan di HTML.");
     }
 
     
