@@ -17,6 +17,36 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    const reviewForm = document.getElementById('reviewForm');
+
+    if (reviewForm) {
+        reviewForm.addEventListener('submit', function(event) {
+            // 1. Mencegah halaman agar tidak refresh saat tombol diklik
+            event.preventDefault();
+
+            // 2. Mengambil semua data dari inputan
+            const data = {
+                nama: document.getElementById('nama').value,
+                email: document.getElementById('email').value,
+                ig: document.getElementById('ig').value,
+                tanggal: document.getElementById('tanggal').value,
+                pesan: document.getElementById('pesan').value
+            };
+
+            // 3. Logika Sederhana (Contoh: Menampilkan pesan sukses)
+            console.log("Data Review Diterima:", data); // Melihat hasil di inspect element console
+            
+            alert("Terima kasih " + data.nama + "!\nReview kamu untuk CORTIS telah berhasil dikirim.");
+
+            // 4. Mengosongkan kembali form setelah dikirim
+            reviewForm.reset();
+        });
+    } else {
+        console.error("Error: ID 'reviewForm' tidak ditemukan di HTML.");
+    }
+
+    
+
     // Carousel tetap sesuai code Anda
     const myCarousel = document.querySelector('#carouselExampleFade');
     if (myCarousel) {

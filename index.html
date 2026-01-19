@@ -191,39 +191,49 @@
     </div>
 </div>
 
-<div class="container2">
-    <div class="milestone-container p-4 p-md-5 shadow-sm mx-auto" style="max-width: 90%;">
-        <h3 class="section-title text-center">150 Days Milestone Summary</h3><br>
-        <div class="row">
-            <div class="col-md-6 mb-4">
-                <div class="milestone-item mb-4">
-                    <label class="text-muted small text-uppercase fw-bold">Group Name</label>
-                    <div class="h5 fw-bold border-bottom pb-2">CORTIS (코티스)</div>
-                </div>
-                <div class="milestone-item">
-                    <label class="text-muted small text-uppercase fw-bold">Fandom Name</label>
-                    <div class="h5 fw-bold border-bottom pb-2">COER (코어)</div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="milestone-item mb-4">
-                    <label class="text-muted small text-uppercase fw-bold">Global Rookie Rank</label>
-                    <div class="h5 fw-bold border-bottom pb-2"><u>#1 Most Awarded Rookie</u></div>
-                </div>
-                <div class="milestone-item">
-                    <label class="text-muted small text-uppercase fw-bold">Debut Anniversary Count</label>
-                    <div class="h5 fw-bold border-bottom pb-2">150 Days</div>
-                </div>
-            </div>
+<div class="container2 py-5">
+    <div class="milestone-container p-4 p-md-5 shadow-sm mx-auto" style="max-width: 90%; border-radius: 12px;">
+        <div class="text-center mb-4">
+            <h3 class="section-title">150 Days Milestone Summary</h3>
+            <p class="text-muted">Share your journey with CORTIS over the last 150 days.</p>
+        </div>
+
+        <form id="reviewForm">
             <div class="row">
-            <div class="col-12">
-                <label class="text-muted small text-uppercase fw-bold">Achievement Statement</label>
-                <div class="milestone-statement mt-2 p-3 bg-custom rounded shadow-inner">
-                    Starting from a small dream in the practice room to conquering the grand stages of MAMA, AAA, and GDA. CORTIS has proven that within 150 days, miracle is not just a word, it is a result of sweat, tears, and the unwavering support of COER. This record is only the beginning of a long journey to the stars.
+                <div class="col-md-6 mb-3">
+                    <label class="form-label fw-bold text-uppercase small text-muted">Full Name</label>
+                    <input type="text" id="nama" class="form-control" placeholder="e.g. Riska Tanjung" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label fw-bold text-uppercase small text-muted">Instagram Username</label>
+                    <input type="text" id="ig" class="form-control" placeholder="@username" required>
                 </div>
             </div>
-        </div>
-        </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label fw-bold text-uppercase small text-muted">Email Address</label>
+                    <input type="email" id="email" class="form-control" placeholder="name@email.com" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label fw-bold text-uppercase small text-muted">Reason Joined COER</label>
+                    <input type="text" class="form-control" placeholder="Because.." required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <label class="form-label fw-bold text-uppercase small text-muted">Messages & Suggestions for CORTIS</label>
+                    <textarea id="pesan" class="form-control" rows="4" placeholder="Write your full message here..." required></textarea>
+                </div>
+            </div>
+
+            <div class="text-start">
+                <button type="submit" class="btn btn-dark px-5 py-2 shadow-sm">
+                    <i class="bi bi-send-fill me-2"></i>Submit Review
+                </button>
+            </div>
+        </form>
     </div>
 </div>
 

@@ -19,6 +19,12 @@
     --profile-filter: none;
     --profile-border: #0d6efd;
     --filter: none;
+    --border-color: #4b5669;
+    --form-bg: #a8aebc;
+    --form-text: #3b3f43;
+    --input-bg: #969da9;
+    --input-border: #62646b;
+    --label-color: #495057;
 }
 
 body.dark-mode{
@@ -42,6 +48,11 @@ body.dark-mode{
     --profile-filter: brightness(0.7) grayscale(0.2);
     --profile-border: #ffffff;
     --filter: invert(1) grayscale(100%) brightness(200%);
+    --border-color: #000000;
+    --form-bg: #1e1e1e; 
+    --form-text: #d2dada;
+    --input-bg: #eae5e5; 
+    --input-border: #323131;
 }
 
 
@@ -180,12 +191,12 @@ h4{
 }
 
 .custom-modal{
-    background: var(--nav-footer-bg) !important; /* Biru di Light, Hitam di Dark */
+    background: var(--nav-footer-bg) !important; 
     background-image: linear-gradient(var(--overlay), var(--overlay)) !important;
     color: var(--text-color) !important;
     border-radius: 20px;
     border: var(--border-left);
-    backdrop-filter: blur(15px); /* Efek kaca kekinian */
+    backdrop-filter: blur(15px); /
 }
 
 .custom-btn-close {
@@ -199,6 +210,39 @@ h4{
 .bg-custom{
     background: var(--nav-footer-bg);  
     border-bottom: var(--border-left);
+}
+
+.milestone-container {
+    background-color: var(--form-bg) !important;
+    color: var(--form-text);
+    transition: all 0.3s ease;
+}
+
+.form-label {
+    color: var(--form-text) !important;
+}
+
+.form-control {
+    background-color: var(--input-bg) !important;
+    border: 1.5px solid var(--input-border) !important;
+    color: var(--form-text) !important;
+    border-radius: 4px;
+    color: #ffffff
+}
+
+.form-control:focus {
+    box-shadow: none;
+    color: var(--form-text) !important;
+    border-color: var(--border-color);
+}
+
+
+.btn-dark {
+    background: var(--nav-footer-bg);
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .milestone-item label{
@@ -248,6 +292,7 @@ h4{
 .map-wrapper:hover{
     transform: scale(1.02);
 }
+
 
 .social-link{
     display: flex;
